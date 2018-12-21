@@ -183,10 +183,15 @@
     <Compile Include="Migrations\201812211210387_InitialCreate.Designer.cs">
       <DependentUpon>201812211210387_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812211245576_added pizza model.cs" />
+    <Compile Include="Migrations\201812211245576_added pizza model.Designer.cs">
+      <DependentUpon>201812211245576_added pizza model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Pizza.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -266,6 +271,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201812211210387_InitialCreate.resx">
       <DependentUpon>201812211210387_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812211245576_added pizza model.resx">
+      <DependentUpon>201812211245576_added pizza model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
