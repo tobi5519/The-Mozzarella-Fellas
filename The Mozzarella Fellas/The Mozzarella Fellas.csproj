@@ -176,6 +176,8 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PizzaController.cs" />
+    <Compile Include="DAL\PizzaContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -186,6 +188,18 @@
     <Compile Include="Migrations\201812211245576_added pizza model.cs" />
     <Compile Include="Migrations\201812211245576_added pizza model.Designer.cs">
       <DependentUpon>201812211245576_added pizza model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812291159146_updated pizza model.cs" />
+    <Compile Include="Migrations\201812291159146_updated pizza model.Designer.cs">
+      <DependentUpon>201812291159146_updated pizza model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812291203164_updated pizza model again.cs" />
+    <Compile Include="Migrations\201812291203164_updated pizza model again.Designer.cs">
+      <DependentUpon>201812291203164_updated pizza model again.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812291217270_Made name and price required.cs" />
+    <Compile Include="Migrations\201812291217270_Made name and price required.Designer.cs">
+      <DependentUpon>201812291217270_Made name and price required.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -251,6 +265,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Pizza\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -274,6 +289,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812211245576_added pizza model.resx">
       <DependentUpon>201812211245576_added pizza model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812291159146_updated pizza model.resx">
+      <DependentUpon>201812291159146_updated pizza model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812291203164_updated pizza model again.resx">
+      <DependentUpon>201812291203164_updated pizza model again.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812291217270_Made name and price required.resx">
+      <DependentUpon>201812291217270_Made name and price required.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

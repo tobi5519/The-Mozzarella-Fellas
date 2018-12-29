@@ -1,17 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 
 namespace The_Mozzarella_Fellas.Models
 {
-    public class Pizza
+    public class Pizza : DbContext
     {
         public int Id {get; set; }
+        [Required]
         public string Name { get; set; }
-        public string[] Toppings { get; set; }
-        // String = type eg family, normal ect and int = price
-        public Dictionary<string, int> Type { get; set; }
+        public string Toppings { get; set; }
+        [Required]
+        public int Price { get; set; }
 
 
     }

@@ -1,0 +1,17 @@
+﻿@model IEnumerable<The_Mozzarella_Fellas.Models.Pizza>
+@{
+    ViewBag.Title = "Index";
+}
+
+<table class="table">
+    <div>
+        @foreach (var item in Model)
+        {
+            <div>
+                <p>Pizza: <b>@item.Name</b> with @item.Toppings - @item.Price</p>
+            </div>
+        }
+    </div>
+</table>
+
+
